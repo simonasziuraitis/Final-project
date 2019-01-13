@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ApsipirkimoSkaiciuokle {
+namespace ApsipirkimoSkaiciuokle.Datasets {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace ApsipirkimoSkaiciuokle {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ReceptaiDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ReceptaiDataSet3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ReceptaiDataSet : global::System.Data.DataSet {
+    public partial class ReceptaiDataSet3 : global::System.Data.DataSet {
         
-        private ReceptaiDataTable tableReceptai;
+        private MitybosPlanasDataTable tableMitybosPlanas;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public ReceptaiDataSet() {
+        public ReceptaiDataSet3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ApsipirkimoSkaiciuokle {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected ReceptaiDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ReceptaiDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace ApsipirkimoSkaiciuokle {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Receptai"] != null)) {
-                    base.Tables.Add(new ReceptaiDataTable(ds.Tables["Receptai"]));
+                if ((ds.Tables["MitybosPlanas"] != null)) {
+                    base.Tables.Add(new MitybosPlanasDataTable(ds.Tables["MitybosPlanas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ReceptaiDataTable Receptai {
+        public MitybosPlanasDataTable MitybosPlanas {
             get {
-                return this.tableReceptai;
+                return this.tableMitybosPlanas;
             }
         }
         
@@ -127,7 +127,7 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ReceptaiDataSet cln = ((ReceptaiDataSet)(base.Clone()));
+            ReceptaiDataSet3 cln = ((ReceptaiDataSet3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace ApsipirkimoSkaiciuokle {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Receptai"] != null)) {
-                    base.Tables.Add(new ReceptaiDataTable(ds.Tables["Receptai"]));
+                if ((ds.Tables["MitybosPlanas"] != null)) {
+                    base.Tables.Add(new MitybosPlanasDataTable(ds.Tables["MitybosPlanas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableReceptai = ((ReceptaiDataTable)(base.Tables["Receptai"]));
+            this.tableMitybosPlanas = ((MitybosPlanasDataTable)(base.Tables["MitybosPlanas"]));
             if ((initTable == true)) {
-                if ((this.tableReceptai != null)) {
-                    this.tableReceptai.InitVars();
+                if ((this.tableMitybosPlanas != null)) {
+                    this.tableMitybosPlanas.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ReceptaiDataSet";
+            this.DataSetName = "ReceptaiDataSet3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ReceptaiDataSet.xsd";
+            this.Namespace = "http://tempuri.org/ReceptaiDataSet3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableReceptai = new ReceptaiDataTable();
-            base.Tables.Add(this.tableReceptai);
+            this.tableMitybosPlanas = new MitybosPlanasDataTable();
+            base.Tables.Add(this.tableMitybosPlanas);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeReceptai() {
+        private bool ShouldSerializeMitybosPlanas() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ReceptaiDataSet ds = new ReceptaiDataSet();
+            ReceptaiDataSet3 ds = new ReceptaiDataSet3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,25 +270,23 @@ namespace ApsipirkimoSkaiciuokle {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void ReceptaiRowChangeEventHandler(object sender, ReceptaiRowChangeEvent e);
+        public delegate void MitybosPlanasRowChangeEventHandler(object sender, MitybosPlanasRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ReceptaiDataTable : global::System.Data.TypedTableBase<ReceptaiRow> {
+        public partial class MitybosPlanasDataTable : global::System.Data.TypedTableBase<MitybosPlanasRow> {
             
-            private global::System.Data.DataColumn columnIngridientas;
+            private global::System.Data.DataColumn columnId;
             
-            private global::System.Data.DataColumn columnKiekis;
-            
-            private global::System.Data.DataColumn columnMatavimoVienetas;
+            private global::System.Data.DataColumn column1;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ReceptaiDataTable() {
-                this.TableName = "Receptai";
+            public MitybosPlanasDataTable() {
+                this.TableName = "MitybosPlanas";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +294,7 @@ namespace ApsipirkimoSkaiciuokle {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal ReceptaiDataTable(global::System.Data.DataTable table) {
+            internal MitybosPlanasDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,32 +311,24 @@ namespace ApsipirkimoSkaiciuokle {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected ReceptaiDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected MitybosPlanasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn IngridientasColumn {
+            public global::System.Data.DataColumn IdColumn {
                 get {
-                    return this.columnIngridientas;
+                    return this.columnId;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn KiekisColumn {
+            public global::System.Data.DataColumn _1Column {
                 get {
-                    return this.columnKiekis;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn MatavimoVienetasColumn {
-                get {
-                    return this.columnMatavimoVienetas;
+                    return this.column1;
                 }
             }
             
@@ -353,47 +343,53 @@ namespace ApsipirkimoSkaiciuokle {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ReceptaiRow this[int index] {
+            public MitybosPlanasRow this[int index] {
                 get {
-                    return ((ReceptaiRow)(this.Rows[index]));
+                    return ((MitybosPlanasRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event ReceptaiRowChangeEventHandler ReceptaiRowChanging;
+            public event MitybosPlanasRowChangeEventHandler MitybosPlanasRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event ReceptaiRowChangeEventHandler ReceptaiRowChanged;
+            public event MitybosPlanasRowChangeEventHandler MitybosPlanasRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event ReceptaiRowChangeEventHandler ReceptaiRowDeleting;
+            public event MitybosPlanasRowChangeEventHandler MitybosPlanasRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event ReceptaiRowChangeEventHandler ReceptaiRowDeleted;
+            public event MitybosPlanasRowChangeEventHandler MitybosPlanasRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddReceptaiRow(ReceptaiRow row) {
+            public void AddMitybosPlanasRow(MitybosPlanasRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ReceptaiRow AddReceptaiRow(string Ingridientas, double Kiekis, string MatavimoVienetas) {
-                ReceptaiRow rowReceptaiRow = ((ReceptaiRow)(this.NewRow()));
+            public MitybosPlanasRow AddMitybosPlanasRow(int Id, int _1) {
+                MitybosPlanasRow rowMitybosPlanasRow = ((MitybosPlanasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Ingridientas,
-                        Kiekis,
-                        MatavimoVienetas};
-                rowReceptaiRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowReceptaiRow);
-                return rowReceptaiRow;
+                        Id,
+                        _1};
+                rowMitybosPlanasRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowMitybosPlanasRow);
+                return rowMitybosPlanasRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public MitybosPlanasRow FindById(int Id) {
+                return ((MitybosPlanasRow)(this.Rows.Find(new object[] {
+                            Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ReceptaiDataTable cln = ((ReceptaiDataTable)(base.Clone()));
+                MitybosPlanasDataTable cln = ((MitybosPlanasDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -401,54 +397,55 @@ namespace ApsipirkimoSkaiciuokle {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ReceptaiDataTable();
+                return new MitybosPlanasDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
-                this.columnIngridientas = base.Columns["Ingridientas"];
-                this.columnKiekis = base.Columns["Kiekis"];
-                this.columnMatavimoVienetas = base.Columns["MatavimoVienetas"];
+                this.columnId = base.Columns["Id"];
+                this.column1 = base.Columns["1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnIngridientas = new global::System.Data.DataColumn("Ingridientas", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIngridientas);
-                this.columnKiekis = new global::System.Data.DataColumn("Kiekis", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnKiekis);
-                this.columnMatavimoVienetas = new global::System.Data.DataColumn("MatavimoVienetas", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMatavimoVienetas);
-                this.columnIngridientas.MaxLength = 50;
-                this.columnMatavimoVienetas.MaxLength = 50;
+                this.columnId = new global::System.Data.DataColumn("Id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId);
+                this.column1 = new global::System.Data.DataColumn("1", typeof(int), null, global::System.Data.MappingType.Element);
+                this.column1.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "column1");
+                this.column1.ExtendedProperties.Add("Generator_UserColumnName", "1");
+                base.Columns.Add(this.column1);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnId}, true));
+                this.columnId.AllowDBNull = false;
+                this.columnId.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ReceptaiRow NewReceptaiRow() {
-                return ((ReceptaiRow)(this.NewRow()));
+            public MitybosPlanasRow NewMitybosPlanasRow() {
+                return ((MitybosPlanasRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ReceptaiRow(builder);
+                return new MitybosPlanasRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ReceptaiRow);
+                return typeof(MitybosPlanasRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ReceptaiRowChanged != null)) {
-                    this.ReceptaiRowChanged(this, new ReceptaiRowChangeEvent(((ReceptaiRow)(e.Row)), e.Action));
+                if ((this.MitybosPlanasRowChanged != null)) {
+                    this.MitybosPlanasRowChanged(this, new MitybosPlanasRowChangeEvent(((MitybosPlanasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -456,8 +453,8 @@ namespace ApsipirkimoSkaiciuokle {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ReceptaiRowChanging != null)) {
-                    this.ReceptaiRowChanging(this, new ReceptaiRowChangeEvent(((ReceptaiRow)(e.Row)), e.Action));
+                if ((this.MitybosPlanasRowChanging != null)) {
+                    this.MitybosPlanasRowChanging(this, new MitybosPlanasRowChangeEvent(((MitybosPlanasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -465,8 +462,8 @@ namespace ApsipirkimoSkaiciuokle {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ReceptaiRowDeleted != null)) {
-                    this.ReceptaiRowDeleted(this, new ReceptaiRowChangeEvent(((ReceptaiRow)(e.Row)), e.Action));
+                if ((this.MitybosPlanasRowDeleted != null)) {
+                    this.MitybosPlanasRowDeleted(this, new MitybosPlanasRowChangeEvent(((MitybosPlanasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -474,14 +471,14 @@ namespace ApsipirkimoSkaiciuokle {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ReceptaiRowDeleting != null)) {
-                    this.ReceptaiRowDeleting(this, new ReceptaiRowChangeEvent(((ReceptaiRow)(e.Row)), e.Action));
+                if ((this.MitybosPlanasRowDeleting != null)) {
+                    this.MitybosPlanasRowDeleting(this, new MitybosPlanasRowChangeEvent(((MitybosPlanasRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveReceptaiRow(ReceptaiRow row) {
+            public void RemoveMitybosPlanasRow(MitybosPlanasRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -490,7 +487,7 @@ namespace ApsipirkimoSkaiciuokle {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ReceptaiDataSet ds = new ReceptaiDataSet();
+                ReceptaiDataSet3 ds = new ReceptaiDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -508,7 +505,7 @@ namespace ApsipirkimoSkaiciuokle {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ReceptaiDataTable";
+                attribute2.FixedValue = "MitybosPlanasDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -552,99 +549,54 @@ namespace ApsipirkimoSkaiciuokle {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ReceptaiRow : global::System.Data.DataRow {
+        public partial class MitybosPlanasRow : global::System.Data.DataRow {
             
-            private ReceptaiDataTable tableReceptai;
+            private MitybosPlanasDataTable tableMitybosPlanas;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal ReceptaiRow(global::System.Data.DataRowBuilder rb) : 
+            internal MitybosPlanasRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableReceptai = ((ReceptaiDataTable)(this.Table));
+                this.tableMitybosPlanas = ((MitybosPlanasDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Ingridientas {
+            public int Id {
+                get {
+                    return ((int)(this[this.tableMitybosPlanas.IdColumn]));
+                }
+                set {
+                    this[this.tableMitybosPlanas.IdColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int _1 {
                 get {
                     try {
-                        return ((string)(this[this.tableReceptai.IngridientasColumn]));
+                        return ((int)(this[this.tableMitybosPlanas._1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Ingridientas\' in table \'Receptai\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'1\' in table \'MitybosPlanas\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableReceptai.IngridientasColumn] = value;
+                    this[this.tableMitybosPlanas._1Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public double Kiekis {
-                get {
-                    try {
-                        return ((double)(this[this.tableReceptai.KiekisColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Kiekis\' in table \'Receptai\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReceptai.KiekisColumn] = value;
-                }
+            public bool Is_1Null() {
+                return this.IsNull(this.tableMitybosPlanas._1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string MatavimoVienetas {
-                get {
-                    try {
-                        return ((string)(this[this.tableReceptai.MatavimoVienetasColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MatavimoVienetas\' in table \'Receptai\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReceptai.MatavimoVienetasColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsIngridientasNull() {
-                return this.IsNull(this.tableReceptai.IngridientasColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetIngridientasNull() {
-                this[this.tableReceptai.IngridientasColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsKiekisNull() {
-                return this.IsNull(this.tableReceptai.KiekisColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetKiekisNull() {
-                this[this.tableReceptai.KiekisColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsMatavimoVienetasNull() {
-                return this.IsNull(this.tableReceptai.MatavimoVienetasColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetMatavimoVienetasNull() {
-                this[this.tableReceptai.MatavimoVienetasColumn] = global::System.Convert.DBNull;
+            public void Set_1Null() {
+                this[this.tableMitybosPlanas._1Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -652,22 +604,22 @@ namespace ApsipirkimoSkaiciuokle {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class ReceptaiRowChangeEvent : global::System.EventArgs {
+        public class MitybosPlanasRowChangeEvent : global::System.EventArgs {
             
-            private ReceptaiRow eventRow;
+            private MitybosPlanasRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ReceptaiRowChangeEvent(ReceptaiRow row, global::System.Data.DataRowAction action) {
+            public MitybosPlanasRowChangeEvent(MitybosPlanasRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ReceptaiRow Row {
+            public MitybosPlanasRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -683,7 +635,7 @@ namespace ApsipirkimoSkaiciuokle {
         }
     }
 }
-namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
+namespace ApsipirkimoSkaiciuokle.Datasets.ReceptaiDataSet3TableAdapters {
     
     
     /// <summary>
@@ -695,7 +647,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ReceptaiTableAdapter : global::System.ComponentModel.Component {
+    public partial class MitybosPlanasTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -709,7 +661,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public ReceptaiTableAdapter() {
+        public MitybosPlanasTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -806,19 +758,36 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Receptai";
-            tableMapping.ColumnMappings.Add("Ingridientas", "Ingridientas");
-            tableMapping.ColumnMappings.Add("Kiekis", "Kiekis");
-            tableMapping.ColumnMappings.Add("MatavimoVienetas", "MatavimoVienetas");
+            tableMapping.DataSetTable = "MitybosPlanas";
+            tableMapping.ColumnMappings.Add("Id", "Id");
+            tableMapping.ColumnMappings.Add("1", "1");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[MitybosPlanas] WHERE (([Id] = @Original_Id) AND ((@p3 = 1 AND " +
+                "[1] IS NULL) OR ([1] = @p2)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Receptai] ([Ingridientas], [Kiekis], [MatavimoVienetas]) VALUE" +
-                "S (@Ingridientas, @Kiekis, @MatavimoVienetas)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[MitybosPlanas] ([Id], [1]) VALUES (@Id, @p1);\r\nSELECT Id, [1] " +
+                "FROM MitybosPlanas WHERE (Id = @Id)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ingridientas", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ingridientas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Kiekis", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Kiekis", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MatavimoVienetas", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MatavimoVienetas", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[MitybosPlanas] SET [Id] = @Id, [1] = @p1 WHERE (([Id] = @Original_I" +
+                "d) AND ((@p3 = 1 AND [1] IS NULL) OR ([1] = @p2)));\r\nSELECT Id, [1] FROM Mitybos" +
+                "Planas WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -834,7 +803,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Ingridientas, Kiekis, MatavimoVienetas FROM dbo.Receptai";
+            this._commandCollection[0].CommandText = "SELECT Id, [1] FROM dbo.MitybosPlanas";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -842,7 +811,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ReceptaiDataSet.ReceptaiDataTable dataTable) {
+        public virtual int Fill(ReceptaiDataSet3.MitybosPlanasDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -855,9 +824,9 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ReceptaiDataSet.ReceptaiDataTable GetData() {
+        public virtual ReceptaiDataSet3.MitybosPlanasDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ReceptaiDataSet.ReceptaiDataTable dataTable = new ReceptaiDataSet.ReceptaiDataTable();
+            ReceptaiDataSet3.MitybosPlanasDataTable dataTable = new ReceptaiDataSet3.MitybosPlanasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -865,15 +834,15 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ReceptaiDataSet.ReceptaiDataTable dataTable) {
+        public virtual int Update(ReceptaiDataSet3.MitybosPlanasDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ReceptaiDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Receptai");
+        public virtual int Update(ReceptaiDataSet3 dataSet) {
+            return this.Adapter.Update(dataSet, "MitybosPlanas");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -894,25 +863,44 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Ingridientas, global::System.Nullable<double> Kiekis, string MatavimoVienetas) {
-            if ((Ingridientas == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_Id, global::System.Nullable<int> p2) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
+            if ((p2.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(p2.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Ingridientas));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Kiekis.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((double)(Kiekis.Value));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int Id, global::System.Nullable<int> p1) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id));
+            if ((p1.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(p1.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((MatavimoVienetas == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(MatavimoVienetas));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -929,6 +917,51 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
                 }
             }
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int Id, global::System.Nullable<int> p1, int Original_Id, global::System.Nullable<int> p2) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id));
+            if ((p1.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(p1.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_Id));
+            if ((p2.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(p2.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(global::System.Nullable<int> p1, int Original_Id, global::System.Nullable<int> p2) {
+            return this.Update(Original_Id, p1, Original_Id, p2);
+        }
     }
     
     /// <summary>
@@ -943,7 +976,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private ReceptaiTableAdapter _receptaiTableAdapter;
+        private MitybosPlanasTableAdapter _mitybosPlanasTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -965,12 +998,12 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public ReceptaiTableAdapter ReceptaiTableAdapter {
+        public MitybosPlanasTableAdapter MitybosPlanasTableAdapter {
             get {
-                return this._receptaiTableAdapter;
+                return this._mitybosPlanasTableAdapter;
             }
             set {
-                this._receptaiTableAdapter = value;
+                this._mitybosPlanasTableAdapter = value;
             }
         }
         
@@ -993,9 +1026,9 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._receptaiTableAdapter != null) 
-                            && (this._receptaiTableAdapter.Connection != null))) {
-                    return this._receptaiTableAdapter.Connection;
+                if (((this._mitybosPlanasTableAdapter != null) 
+                            && (this._mitybosPlanasTableAdapter.Connection != null))) {
+                    return this._mitybosPlanasTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1010,7 +1043,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._receptaiTableAdapter != null)) {
+                if ((this._mitybosPlanasTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1022,14 +1055,14 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(ReceptaiDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ReceptaiDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._receptaiTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Receptai.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._mitybosPlanasTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.MitybosPlanas.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._receptaiTableAdapter.Update(updatedRows));
+                    result = (result + this._mitybosPlanasTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1041,13 +1074,13 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(ReceptaiDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ReceptaiDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._receptaiTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Receptai.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._mitybosPlanasTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.MitybosPlanas.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._receptaiTableAdapter.Update(addedRows));
+                    result = (result + this._mitybosPlanasTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1059,13 +1092,13 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(ReceptaiDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ReceptaiDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._receptaiTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Receptai.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._mitybosPlanasTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.MitybosPlanas.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._receptaiTableAdapter.Update(deletedRows));
+                    result = (result + this._mitybosPlanasTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1101,15 +1134,15 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(ReceptaiDataSet dataSet) {
+        public virtual int UpdateAll(ReceptaiDataSet3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._receptaiTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._receptaiTableAdapter.Connection) == false))) {
+            if (((this._mitybosPlanasTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._mitybosPlanasTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1145,13 +1178,13 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._receptaiTableAdapter != null)) {
-                    revertConnections.Add(this._receptaiTableAdapter, this._receptaiTableAdapter.Connection);
-                    this._receptaiTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._receptaiTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._receptaiTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._receptaiTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._receptaiTableAdapter.Adapter);
+                if ((this._mitybosPlanasTableAdapter != null)) {
+                    revertConnections.Add(this._mitybosPlanasTableAdapter, this._mitybosPlanasTableAdapter.Connection);
+                    this._mitybosPlanasTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._mitybosPlanasTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._mitybosPlanasTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._mitybosPlanasTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._mitybosPlanasTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1212,9 +1245,9 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._receptaiTableAdapter != null)) {
-                    this._receptaiTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._receptaiTableAdapter]));
-                    this._receptaiTableAdapter.Transaction = null;
+                if ((this._mitybosPlanasTableAdapter != null)) {
+                    this._mitybosPlanasTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._mitybosPlanasTableAdapter]));
+                    this._mitybosPlanasTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

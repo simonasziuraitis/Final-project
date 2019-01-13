@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace ApsipirkimoSkaiciuokle {
+namespace ApsipirkimoSkaiciuokle.Datasets {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace ApsipirkimoSkaiciuokle {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ReceptaiDataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ReceptaiDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ReceptaiDataSet2 : global::System.Data.DataSet {
+    public partial class ReceptaiDataSet1 : global::System.Data.DataSet {
         
         private ReceptaiDataTable tableReceptai;
         
@@ -30,7 +30,7 @@ namespace ApsipirkimoSkaiciuokle {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public ReceptaiDataSet2() {
+        public ReceptaiDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ApsipirkimoSkaiciuokle {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected ReceptaiDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ReceptaiDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ReceptaiDataSet2 cln = ((ReceptaiDataSet2)(base.Clone()));
+            ReceptaiDataSet1 cln = ((ReceptaiDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ReceptaiDataSet2";
+            this.DataSetName = "ReceptaiDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ReceptaiDataSet2.xsd";
+            this.Namespace = "http://tempuri.org/ReceptaiDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableReceptai = new ReceptaiDataTable();
@@ -225,7 +225,7 @@ namespace ApsipirkimoSkaiciuokle {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ReceptaiDataSet2 ds = new ReceptaiDataSet2();
+            ReceptaiDataSet1 ds = new ReceptaiDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -490,7 +490,7 @@ namespace ApsipirkimoSkaiciuokle {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ReceptaiDataSet2 ds = new ReceptaiDataSet2();
+                ReceptaiDataSet1 ds = new ReceptaiDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -683,7 +683,7 @@ namespace ApsipirkimoSkaiciuokle {
         }
     }
 }
-namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
+namespace ApsipirkimoSkaiciuokle.Datasets.ReceptaiDataSet1TableAdapters {
     
     
     /// <summary>
@@ -842,7 +842,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ReceptaiDataSet2.ReceptaiDataTable dataTable) {
+        public virtual int Fill(ReceptaiDataSet1.ReceptaiDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -855,9 +855,9 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ReceptaiDataSet2.ReceptaiDataTable GetData() {
+        public virtual ReceptaiDataSet1.ReceptaiDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ReceptaiDataSet2.ReceptaiDataTable dataTable = new ReceptaiDataSet2.ReceptaiDataTable();
+            ReceptaiDataSet1.ReceptaiDataTable dataTable = new ReceptaiDataSet1.ReceptaiDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -865,14 +865,14 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ReceptaiDataSet2.ReceptaiDataTable dataTable) {
+        public virtual int Update(ReceptaiDataSet1.ReceptaiDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ReceptaiDataSet2 dataSet) {
+        public virtual int Update(ReceptaiDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Receptai");
         }
         
@@ -1022,7 +1022,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(ReceptaiDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ReceptaiDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._receptaiTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Receptai.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1041,7 +1041,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(ReceptaiDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ReceptaiDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._receptaiTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Receptai.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1059,7 +1059,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(ReceptaiDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ReceptaiDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._receptaiTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Receptai.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1101,7 +1101,7 @@ namespace ApsipirkimoSkaiciuokle.ReceptaiDataSet2TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(ReceptaiDataSet2 dataSet) {
+        public virtual int UpdateAll(ReceptaiDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

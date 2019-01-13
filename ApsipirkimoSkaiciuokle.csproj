@@ -84,27 +84,27 @@
     <Compile Include="Klases\Patiekalas.cs" />
     <Compile Include="Klases\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReceptaiDataSet.Designer.cs">
+    <Compile Include="Datasets\ReceptaiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReceptaiDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReceptaiDataSet1.Designer.cs">
+    <Compile Include="Datasets\ReceptaiDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReceptaiDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReceptaiDataSet2.Designer.cs">
+    <Compile Include="Datasets\ReceptaiDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReceptaiDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReceptaiDataSet3.Designer.cs">
+    <Compile Include="Datasets\ReceptaiDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReceptaiDataSet3.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ReceptaiDataSet4.Designer.cs">
+    <Compile Include="Datasets\ReceptaiDataSet4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReceptaiDataSet4.xsd</DependentUpon>
@@ -138,59 +138,59 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="ReceptaiDataSet.xsc">
+    <None Include="Datasets\ReceptaiDataSet.xsc">
       <DependentUpon>ReceptaiDataSet.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet.xsd">
+    <None Include="Datasets\ReceptaiDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ReceptaiDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ReceptaiDataSet.xss">
+    <None Include="Datasets\ReceptaiDataSet.xss">
       <DependentUpon>ReceptaiDataSet.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet1.xsc">
+    <None Include="Datasets\ReceptaiDataSet1.xsc">
       <DependentUpon>ReceptaiDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet1.xsd">
+    <None Include="Datasets\ReceptaiDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ReceptaiDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ReceptaiDataSet1.xss">
+    <None Include="Datasets\ReceptaiDataSet1.xss">
       <DependentUpon>ReceptaiDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet2.xsc">
+    <None Include="Datasets\ReceptaiDataSet2.xsc">
       <DependentUpon>ReceptaiDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet2.xsd">
+    <None Include="Datasets\ReceptaiDataSet2.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ReceptaiDataSet2.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ReceptaiDataSet2.xss">
+    <None Include="Datasets\ReceptaiDataSet2.xss">
       <DependentUpon>ReceptaiDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet3.xsc">
+    <None Include="Datasets\ReceptaiDataSet3.xsc">
       <DependentUpon>ReceptaiDataSet3.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet3.xsd">
+    <None Include="Datasets\ReceptaiDataSet3.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ReceptaiDataSet3.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ReceptaiDataSet3.xss">
+    <None Include="Datasets\ReceptaiDataSet3.xss">
       <DependentUpon>ReceptaiDataSet3.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet4.xsc">
+    <None Include="Datasets\ReceptaiDataSet4.xsc">
       <DependentUpon>ReceptaiDataSet4.xsd</DependentUpon>
     </None>
-    <None Include="ReceptaiDataSet4.xsd">
+    <None Include="Datasets\ReceptaiDataSet4.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ReceptaiDataSet4.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ReceptaiDataSet4.xss">
+    <None Include="Datasets\ReceptaiDataSet4.xss">
       <DependentUpon>ReceptaiDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
@@ -198,10 +198,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Receptai.mdf">
+    <Content Include="Datasets\Receptai.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Receptai_log.ldf">
+    <Content Include="Datasets\Receptai_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Receptai.mdf</DependentUpon>
     </Content>
