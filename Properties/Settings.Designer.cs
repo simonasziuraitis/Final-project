@@ -26,8 +26,8 @@ namespace ApsipirkimoSkaiciuokle.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Datasets\\Rece" +
-            "ptai.mdf;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Receptai.mdf;" +
+            "Integrated Security=True")]
         public string ReceptaiConnectionString {
             get {
                 return ((string)(this["ReceptaiConnectionString"]));
